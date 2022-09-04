@@ -14,8 +14,8 @@
     "cdk": "cdk",
     "cdk:stg-diff": "EVENTABBR=$npm_package_config_event cdk diff -c config=stg",
     "cdk:prd-diff": "EVENTABBR=$npm_package_config_event cdk diff -c config=prd",
-    "cdk:stg-deploy": "EVENTABBR=$npm_package_config_eventcdk cdk deploy -c config=stg --require-approval never",
-    "cdk:prd-deploy": "EVENTABBR=$npm_package_config_eventcdk cdk deploy -c config=prd --require-approval never"
+    "cdk:stg-deploy": "EVENTABBR=$npm_package_config_eventcdk cdk deploy -c config=stg --require-approval never --all",
+    "cdk:prd-deploy": "EVENTABBR=$npm_package_config_eventcdk cdk deploy -c config=prd --require-approval never --all"
   },
   "devDependencies": {
     "@types/jest": "^27.5.2",
